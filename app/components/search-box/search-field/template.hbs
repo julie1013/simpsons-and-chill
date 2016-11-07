@@ -1,1 +1,5 @@
-{{yield}}
+<form {{action 'findEpisode' on='submit'}}>
+  {{input placeholder='Find Episode'
+          class="search-field"
+          value=form.text}}
+</form>
