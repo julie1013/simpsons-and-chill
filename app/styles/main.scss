@@ -1,11 +1,5 @@
 $black: #000;
 
-h1 {
-  margin: 0 auto;
-  text-align: center;
-}
-
-
 .to-watch-list {
   border: 1px solid $black;
   height: 400px;
@@ -13,46 +7,12 @@ h1 {
   width: 300px;
 }
 
-.search-box-outer {
+.search-box{
   border: 1px solid $black;
   height: 200px;
   margin: 0 auto;
   margin-top: 100px;
   width: 700px;
-}
-
-.search-box-inner {
-  border: 1px solid $black;
-  height: 150px;
-  margin: 0 auto;
-  margin-top: 25px;
-  width: 650px;
-}
-
-.search-area {
-  border: 1px solid $black;
-  height: 70px;
-  margin: 0 auto;
-  margin-top: 30px;
-  padding: 0 10px;
-  width: 600px;
-}
-
-.search-area li {
-  border: 1px solid $black;
-  list-style-type: none;
-  margin: 0 auto;
-  margin-left: 10px;
-  margin-top: 20px;
-}
-
-.search-tag {
-  border: 1px solid $black;
-  float: left;
-  height: 20px;
-  margin: 0 auto;
-  text-align: center;
-  width: 100px;
 }
 
 .search-field {
@@ -63,7 +23,8 @@ h1 {
   width: 200px;
 }
 
-.search-field input {
+.search-header {
   border: 1px solid $black;
+  height: 10px;
   width: 100%;
 }
