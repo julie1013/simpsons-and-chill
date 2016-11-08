@@ -13,6 +13,7 @@ Router.map(function () {
   this.route('search');
   this.route('episodes');
   this.route('episode', { path: 'episodes/:episode_id' });
+  this.route('my-playlist');
 });
 
 export default Router;

@@ -1,20 +1,26 @@
 $black: #000;
 
+.my-playlist {
+  border: 1px solid $black;
+  height: 500px;
+  margin-top: 50px;
+  width: 400px;
+}
 
+h1 {
+  text-align: center;
+}
 
-// .to-watch-list {
-//   border: 1px solid $black;
-//   height: 400px;
-//   margin-top: 100px;
-//   width: 300px;
-// }
+h3 {
+  text-align: center;
+}
 
-.search-box{
+.search-box {
   border: 1px solid $black;
   border-radius: 10px;
   height: 250px;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 25px;
   width: 700px;
 }
 

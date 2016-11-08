@@ -1,0 +1,6 @@
+<div class="my-playlist">
+  <h3>My Playlist</h3>
+  {{#each episode.title as |item|}}
+    {{my-playlist/item item=item}}
+  {{/each}}
+</div>
