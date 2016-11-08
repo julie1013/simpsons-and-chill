@@ -3,5 +3,10 @@
 <ul>
 {{#each model as |user|}}
   <li>{{user.email}}</li>
+  {{#each user.episodes as |episode|}}
+    <p>
+      {{episode.title}}
+    </p>
+  {{/each}}
 {{/each}}
 </ul>

@@ -1,6 +1,3 @@
-{{#each model as |episode| }}
-  {{#link-to "episode" episode}}
-      Episode {{episode.id}} is called {{episode.title}} <br>
-    {{/link-to}}
-  {{/each}}
-{{outlet}}
+{{#each model as |episode|}}
+  <h6> {{episode.title}}</h6>
+{{/each}}

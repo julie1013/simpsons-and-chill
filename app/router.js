@@ -9,11 +9,13 @@ Router.map(function () {
   this.route('sign-up');
   this.route('sign-in');
   this.route('change-password');
+  this.route('user', { path: '/users/:id'});
   this.route('users');
-  this.route('search');
   this.route('episodes');
-  this.route('episode', { path: 'episodes/:episode_id' });
-  this.route('my-playlist');
+  this.route('episode', { path: '/episodes/:id' });
+  // this.route('my-playlist');
+  this.route('playlists');
+  this.route('playlist', { path: '/playlists/:id'});
 });
 
 export default Router;

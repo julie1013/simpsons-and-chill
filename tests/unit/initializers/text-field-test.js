@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import TextFieldInitializer from 'ga-wdi-boston.ember-auth/initializers/text-field';
+import TextFieldInitializer from 'simpsons-and-chill-client/initializers/text-field';
 import { module, test } from 'qunit';
 
 let application;
