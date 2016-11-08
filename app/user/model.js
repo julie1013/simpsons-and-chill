@@ -5,5 +5,5 @@ import { hasMany } from 'ember-data/relationships';
 export default Model.extend({
   email: attr('string'),
   episodes: hasMany('episode'),
-  // playlists: hasMany('playlist'),
+  playlists: hasMany('playlist'),
 });
