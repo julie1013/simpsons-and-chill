@@ -49,4 +49,15 @@ export default Ember.Service.extend({
     return this.get('ajax').del(`/sign-out/${this.get('credentials.id')}`)
     .finally(() => this.get('credentials').reset());
   },
+
+  // createPlaylistRecord (userId, episodeId) {
+  //   return this.get('ajax').post(`/playlists`, {
+  //     data: {
+  //       playlist: {
+  //         user_id: userId,
+  //         episode_id: episodeId,
+  //       }
+  //     }
+  //   });
+  // }
 });

@@ -13,7 +13,6 @@ Router.map(function () {
   this.route('users');
   this.route('episodes');
   this.route('episode', { path: '/episodes/:id' });
-  // this.route('my-playlist');
   this.route('playlists');
   this.route('playlist', { path: '/playlists/:id'});
 });

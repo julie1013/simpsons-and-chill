@@ -1,3 +1,4 @@
 {{#each model as |episode|}}
-  <h6> {{episode.id}}. {{episode.title}}</h6><button class="add-to-list">Add to Playlist</button>
+  <h6> {{episode.id}}. {{episode.title}}</h6>
+  {{add-to-playlist-button episode=episode create='addToPlaylist'}}
 {{/each}}
