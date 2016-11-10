@@ -14,7 +14,6 @@ Router.map(function () {
   this.route('episodes');
   this.route('episode', { path: '/episodes/:id' });
   this.route('playlists');
-  this.route('playlist', { path: '/playlists/:id'});
 });
 
 export default Router;
