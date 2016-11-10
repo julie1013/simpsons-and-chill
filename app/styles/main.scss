@@ -1,50 +1,43 @@
 $black: #000;
 
-.my-playlist {
-  border: 1px solid $black;
-  height: 500px;
-  margin-top: 50px;
-  width: 400px;
-}
-
 h1 {
   text-align: center;
 }
 
 h3 {
-  text-align: center;
+  text-align: left;
 }
 
-.search-box {
-  border: 1px solid $black;
-  border-radius: 10px;
-  height: 250px;
-  margin: 0 auto;
-  margin-top: 25px;
-  width: 700px;
-}
-
-.search-header {
-  border: 1px solid $black;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  height: 35px;
-  text-align: center;
-  width: 100%;
-}
-
-.search-field {
-  border: 1px solid $black;
-  margin: 0 auto;
-  margin-top: 15px;
-  width: 500px;
-}
-
-.search-results-box {
-  border: 1px solid $black;
-  border-radius: 5px;
-  height: 115px;
-  margin: 0 auto;
-  margin-top: 15px;
-  width: 500px;
-}
+// .search-box {
+//   border: 1px solid $black;
+//   border-radius: 10px;
+//   height: 250px;
+//   margin: 0 auto;
+//   margin-top: 25px;
+//   width: 700px;
+// }
+//
+// .search-header {
+//   border: 1px solid $black;
+//   border-top-left-radius: 10px;
+//   border-top-right-radius: 10px;
+//   height: 35px;
+//   text-align: center;
+//   width: 100%;
+// }
+//
+// .search-field {
+//   border: 1px solid $black;
+//   margin: 0 auto;
+//   margin-top: 15px;
+//   width: 500px;
+// }
+//
+// .search-results-box {
+//   border: 1px solid $black;
+//   border-radius: 5px;
+//   height: 115px;
+//   margin: 0 auto;
+//   margin-top: 15px;
+//   width: 500px;
+// }

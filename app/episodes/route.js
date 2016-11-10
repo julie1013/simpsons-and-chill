@@ -23,11 +23,11 @@ export default Ember.Route.extend({
         //   //whatever you want to transitionTo
         // })
     },
-    removeFromPlaylist (playlist) {
-      playlist.destroyRecord();
-    },
-    rate () {
-
-    }
+    // removeFromPlaylist (playlist) {
+    //   playlist.destroyRecord();
+    // },
+    // rate () {
+    //
+    // }
   }
 });
