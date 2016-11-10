@@ -8,10 +8,22 @@ export default Ember.Route.extend({
   },
 
   actions: {
-    addToPlaylist (episodeId) {
-      let userId = this.get('auth.credentials.id');
-      // return this.get('auth').createPlaylistRecord(userId, episodeId)
-      // .catch((err) => console.error(err));
-    }
+    addToPlaylist (episode) {
+      let playlist = this.get('store').createRecord('playlist', {});
+
+      return this.get('store').findRecord('user', this.get('auth.credentials.id'))
+        .then((user) => {
+          playlist.set('episode', episode);
+          playlist.set('user', user);
+          console.log("user is ", user.get('email'));
+          console.log("playlist is ", playlist.get('episode.title'));
+
+          playlist.save();
+        })
+        .catch(console.error);
+        // .then(()=>{
+        //   //whatever you want to transitionTo
+        // })
+    },
   }
 });

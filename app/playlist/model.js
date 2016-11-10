@@ -1,9 +1,10 @@
-// import DS from 'ember-data';
-import Model from 'ember-data/model';
+import DS from 'ember-data';
+// import Model from 'ember-data/model';
 // import attr from 'ember-data/attr';
-import { belongsTo } from 'ember-data/relationships';
+// import { belongsTo } from 'ember-data/relationships';
 
-export default Model.extend({
-  episode: belongsTo('episode', { inverse: 'playlists' }),
-  user: belongsTo('user', { inverse: 'playlists' }),
+export default DS.Model.extend({
+  episode: DS.belongsTo('episode'),
+  user: DS.belongsTo('user'),
+  rating: DS.attr('number'),
 });
