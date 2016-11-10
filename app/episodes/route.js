@@ -19,15 +19,6 @@ export default Ember.Route.extend({
           .then(() => this.transitionTo('playlists'));
         })
         .catch(console.error);
-        // .then(()=>{
-        //   //whatever you want to transitionTo
-        // })
     },
-    // removeFromPlaylist (playlist) {
-    //   playlist.destroyRecord();
-    // },
-    // rate () {
-    //
-    // }
   }
 });
