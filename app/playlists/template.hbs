@@ -1,7 +1,7 @@
 <ol>
 {{#each model as |playlist|}}
   <li>
-    <h3>{{playlist.episode.title}}</h3>
+    <h3>{{playlist.episode.title}}{{playlists/episode-rating}}</h3>
     {{remove-from-queue-button playlist=playlist delete='removeFromPlaylist'}}
   </li>
 {{/each}}
