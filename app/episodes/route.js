@@ -25,5 +25,8 @@ export default Ember.Route.extend({
     removeFromPlaylist (playlist) {
       playlist.destroyRecord();
     },
+    rate () {
+      
+    }
   }
 });
