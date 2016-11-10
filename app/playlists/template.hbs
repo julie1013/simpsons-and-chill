@@ -2,7 +2,7 @@
 {{#each model as |playlist|}}
   <li>
     <h3>{{playlist.episode.title}}</h3>
-    <button>"Remove from Queue"</button>
+    {{remove-from-queue-button playlist=playlist delete='removeFromPlaylist'}}
   </li>
 {{/each}}
 </ol>

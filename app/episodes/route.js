@@ -15,15 +15,15 @@ export default Ember.Route.extend({
         .then((user) => {
           playlist.set('episode', episode);
           playlist.set('user', user);
-          console.log("user is ", user.get('email'));
-          console.log("playlist is ", playlist.get('episode.title'));
-
           playlist.save();
         })
         .catch(console.error);
         // .then(()=>{
         //   //whatever you want to transitionTo
         // })
+    },
+    removeFromPlaylist (playlist) {
+      playlist.destroyRecord();
     },
   }
 });
