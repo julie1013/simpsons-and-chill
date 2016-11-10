@@ -15,7 +15,8 @@ export default Ember.Route.extend({
         .then((user) => {
           playlist.set('episode', episode);
           playlist.set('user', user);
-          playlist.save();
+          playlist.save()
+          .then(() => this.transitionTo('playlists'));
         })
         .catch(console.error);
         // .then(()=>{
@@ -26,7 +27,7 @@ export default Ember.Route.extend({
       playlist.destroyRecord();
     },
     rate () {
-      
+
     }
   }
 });
