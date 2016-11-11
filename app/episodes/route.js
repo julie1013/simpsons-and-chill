@@ -4,21 +4,26 @@ export default Ember.Route.extend({
   auth: Ember.inject.service(),
 
   model () {
-    return this.get('store').findAll('episode');
+    return Ember.RSVP.hash({
+      episodes: this.get('store').findAll('episode'),
+      user: this.get('store').findRecord('user', this.get('auth.credentials.id')),
+    });
   },
 
   actions: {
-    addToPlaylist (episode) {
-      let playlist = this.get('store').createRecord('playlist', {});
+    addToPlaylist (episode, user) {
+      let playlist = this.get('store').createRecord('playlist', {
+        episode: episode,
+        user: user,
+      });
 
-      return this.get('store').findRecord('user', this.get('auth.credentials.id'))
-        .then((user) => {
-          playlist.set('episode', episode);
-          playlist.set('user', user);
-          playlist.save()
-          .then(() => this.transitionTo('playlists'));
+      playlist.save()
+        .then(() => this.transitionTo('playlists'))
+        .catch((error) => {
+          console.error(error);
+          playlist.deleteRecord(); // don't trigger a save!
         })
-        .catch(console.error);
+        ;
     },
   }
 });

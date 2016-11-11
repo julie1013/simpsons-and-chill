@@ -1,8 +1,9 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-
-  click: function() {
-    this.sendAction('create', this.get('episode'));
+  actions: {
+    click () {
+      this.sendAction('create', this.get('episode'), this.get('user'));
+    }
   },
 });

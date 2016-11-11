@@ -1,8 +1,8 @@
 <ol>
-{{#each model as |episode|}}
+{{#each model.episodes as |episode|}}
 <li>
   <h6>{{episode.title}}</h6>
-  {{add-to-playlist-button episode=episode create='addToPlaylist'}}
+  {{add-to-playlist-button episode=episode user=user create='addToPlaylist'}}
 </li>
 {{/each}}
 </ol>
