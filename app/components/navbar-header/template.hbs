@@ -1,2 +1,7 @@
 {{hamburger-menu}}
-{{#link-to "application" class="navbar-brand"}}Home{{/link-to}}
+{{#if isAuthenticated}}
+  {{#link-to "episodes" class="navbar-brand"}}All Episodes{{/link-to}}
+  {{#link-to "playlists" class="navbar-brand"}}My Episodes{{/link-to}}
+{{else}}
+  {{#link-to "sign-up" class='navbar-brand'}}Simpsons and Chill{{/link-to}}
+{{/if}}
