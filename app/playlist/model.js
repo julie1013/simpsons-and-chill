@@ -4,7 +4,11 @@ import DS from 'ember-data';
 // import { belongsTo } from 'ember-data/relationships';
 
 export default DS.Model.extend({
-  episode: DS.belongsTo('episode'),
-  user: DS.belongsTo('user'),
+  episode: DS.belongsTo('episode', {
+   inverse: 'playlists'
+ }),
+  user: DS.belongsTo('user', {
+   inverse: 'playlists'
+ }),
   rating: DS.attr('number'),
 });

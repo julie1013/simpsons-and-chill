@@ -5,5 +5,5 @@ import DS from 'ember-data';
 export default DS.Model.extend({
   email: DS.attr('string'),
   episodes: DS.hasMany('episode'),
-  // playlists: hasMany('playlist'),
+  playlists: DS.hasMany('playlist'),
 });
