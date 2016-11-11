@@ -1,5 +1,6 @@
-import ENV from 'simpsons-and-chill-client/config/environment';
 import ActiveModelAdapter from 'active-model-adapter';
+import ENV from 'simpsons-and-chill-client/config/environment';
+
 
 import Ember from 'ember';
 
