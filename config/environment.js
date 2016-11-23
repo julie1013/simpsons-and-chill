@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: '<% NAME OF YOUR CLIENT will be here %>',
+    modulePrefix: 'simpsons-and-chill-client',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
@@ -13,10 +13,9 @@ module.exports = function(environment) {
         // e.g. 'with-controller': true
       }
     },
-      EXTEND_PROTOTYPES: {
-        // Prevent Ember Data from overriding Date.parse.
-        Date: false,
-      },
+    EXTEND_PROTOTYPES: {
+      // Prevent Ember Data from overriding Date.parse.
+      Date: false,
     },
 
     APP: {
@@ -31,7 +30,7 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
-    let port = +('GA'.split('').reduce((p, c) =>
+    var port = +('GA'.split('').reduce((p, c) =>
       p + c.charCodeAt().toString(16), '')
     );
     ENV.apiHost = `http://localhost:${port}`;
