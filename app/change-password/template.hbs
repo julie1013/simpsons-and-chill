@@ -1,3 +1,6 @@
-<h2>Change Password</h2>
-
-{{change-password-form submit="changePassword"}}
+{{#bs-modal title="Change Password" body=false footer=false}}
+  {{#bs-modal-body}}
+    {{change-password-form submit="changePassword"}}
+  {{/bs-modal-body}}
+  {{bs-modal-footer closeTitle="Cancel"}}
+{{/bs-modal}}
