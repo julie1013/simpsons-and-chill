@@ -1,3 +1,6 @@
-{{#bs-modal open=openModal title="Sign In"}}
-  {{sign-in-form submit="signIn" reset="reset"}}
+{{#bs-modal title="Sign In" body=false footer=false}}
+  {{#bs-modal-body}}
+    {{sign-in-form submit="signIn"}}
+  {{/bs-modal-body}}
+  {{bs-modal-footer closeTitle="Cancel"}}
 {{/bs-modal}}
