@@ -16,10 +16,15 @@ h3 {
   text-align: left;
 }
 
-// .rating {
-//   border: 1px solid $black;
-//   float: right;
-// }
+.rate-it {
+  border: 1px solid $black;
+  float: right;
+  width: 45px;
+}
+
+.remove-episode {
+  border-bottom: 1px solid $black;
+}
 
 // .search-box {
 //   border: 1px solid $black;
