@@ -2,7 +2,7 @@
 {{#each model as |playlist|}}
   <li>
     <h3>{{playlist.episode.title}}</h3>
-    {{rating-input patch='rate'}}
+    {{rating-input playlist=playlist patch='rate'}}
     {{remove-from-queue-button playlist=playlist delete='removeFromPlaylist'}}
   </li>
 {{/each}}
