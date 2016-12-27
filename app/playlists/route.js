@@ -9,10 +9,10 @@ export default Ember.Route.extend({
     removeFromPlaylist (playlist) {
       playlist.destroyRecord();
     },
-    rate (playlist) {
-      debugger;
-      console.log(this);
-      this.sendAction('patch')
+    rate (rating, playlist) {
+      console.log(playlist);
+      playlist.set('rating', rating);
+      playlist.save();
     }
   }
 });
